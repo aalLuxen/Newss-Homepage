@@ -17,6 +17,6 @@ function setMenuOpen(isOpen) {
     }
 }
 
-menuOpen.addEventListener('click', () => setMenuOpen(true));
-menuClose.addEventListener('click', () => setMenuOpen(false));
-menuOverlay.addEventListener('click', () => setMenuOpen(false));
+menuOpen?.addEventListener('click', () => setMenuOpen(true));
+menuClose?.addEventListener('click', () => setMenuOpen(false));
+menuOverlay?.addEventListener('click', () => setMenuOpen(false));
