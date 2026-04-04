@@ -3,23 +3,22 @@ const menuClose = document.getElementById('menu-close');
 const mainNav = document.getElementById('main-nav');
 const menuOverlay = document.getElementById('menu-overlay');
 
-menuOpen.addEventListener('click', () => {
-    mainNav.style.display = 'flex';
-    menuOverlay.style.display = 'block';
-    menuOpen.setAttribute('aria-expanded', 'true');
-    mainNav.setAttribute('aria-hidden', 'false');
-})
+function setMenuOpen(isOpen) {
+    if (isOpen) {
+        mainNav.removeAttribute('hidden');
+        mainNav.setAttribute('aria-hidden', 'false');
+        menuOpen.setAttribute('aria-expanded', 'true');
+        menuClose.setAttribute('aria-expanded', 'true');
+        menuOverlay.style.display = 'block';
+    } else {
+        mainNav.hidden = true;
+        mainNav.setAttribute('aria-hidden', 'true');
+        menuOpen.setAttribute('aria-expanded', 'false');
+        menuClose.setAttribute('aria-expanded', 'false');
+        menuOverlay.style.display = 'none';
+    }
+}
 
-menuClose.addEventListener('click', () => {
-    mainNav.style.display = 'none';
-    menuOverlay.style.display = 'none';
-    menuOpen.setAttribute('aria-expanded', 'false');
-    mainNav.setAttribute('aria-hidden', 'true');
-})
-
-menuOverlay.addEventListener('click', () => {
-    mainNav.style.display = 'none';
-    menuOverlay.style.display = 'none';
-    menuOpen.setAttribute('aria-expanded', 'false');
-    mainNav.setAttribute('aria-hidden', 'true');
-})
+menuOpen.addEventListener('click', () => setMenuOpen(true));
+menuClose.addEventListener('click', () => setMenuOpen(false));
+menuOverlay.addEventListener('click', () => setMenuOpen(false));
