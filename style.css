@@ -230,6 +230,10 @@ aside article:not(:first-child) {
 }
 
 @media (max-width: 800px) {
+    nav:not([hidden]) {
+        display: flex;
+    }
+
     .container{
         grid-template-columns: 1fr;
     }
