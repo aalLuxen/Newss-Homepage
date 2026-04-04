@@ -121,8 +121,21 @@ header button {
     grid-column: span 2;
 }
 
+/* skip link */
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 6px;
+    background: #000;
+    color: #fff;
+    padding: 8px;
+    text-decoration: none;
+    z-index: 100;
+}
 
-
+.skip-link:focus {
+    top: 6px;
+}
 
 aside {
     background-color: var(--very-dark-blue);
