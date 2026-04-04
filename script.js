@@ -4,16 +4,23 @@ const mainNav = document.getElementById('main-nav');
 const menuOverlay = document.getElementById('menu-overlay');
 
 function setMenuOpen(isOpen) {
+
+    if (!mainNav || !menuOverlay) return;
+
     if (isOpen) {
         mainNav.removeAttribute('hidden');
         mainNav.setAttribute('aria-hidden', 'false');
         menuOverlay.style.display = 'block';
-        menuClose.focus();
+        if (menuClose && typeof menuClose.focus === 'function') {
+            menuClose.focus();
+        }
     } else {
         mainNav.setAttribute('hidden', '');
         mainNav.setAttribute('aria-hidden', 'true');
         menuOverlay.style.display = 'none';
-        menuOpen.focus();
+        if (menuOpen && typeof menuOpen.focus === 'function') {
+            menuOpen.focus();
+        }
     }
 }
 
