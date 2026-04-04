@@ -5,7 +5,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
 
@@ -17,11 +17,9 @@
 <body>
 
 <!--skip link-->
-
   <a href="#main-content" class="skip-link">Skip to main content</a>
 
 <!--Header-->
-
   <header>
     <a href="/"><img src="assets/images/logo.svg" alt="News logo"></a>
 
@@ -35,131 +33,107 @@
       </button>
 
       <ul>
-        <li>
-          <a href="#">Home</a>
-        </li>
-        <li>
-          <a href="#">New</a>
-        </li>
-        <li>
-          <a href="#">Popular</a>
-        </li>
-        <li>
-          <a href="#">Trending</a>
-        </li>
-        <li>
-          <a href="#">Categories</a>
-        </li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">New</a></li>
+        <li><a href="#">Popular</a></li>
+        <li><a href="#">Trending</a></li>
+        <li><a href="#">Categories</a></li>
       </ul>
-
     </nav>
   </header>
 
   <main class="container" id="main-content">
 
 <!--Big news-->
+    <section class="big">
+      <picture>
+        <source media="(min-width: 376px)" srcset="assets/images/image-web-3-desktop.jpg">
+        <img src="assets/images/image-web-3-mobile.jpg" alt="Illustration of a headline about Web 3.0 on a retro-style monitor">
+      </picture>
 
-  <section class="big">
-    <picture>
-      <source media="(min-width: 376px)" srcset="assets/images/image-web-3-desktop.jpg">
-      <img src="assets/images/image-web-3-mobile.jpg" alt="Illustration of a headline about Web 3.0 on a retro-style monitor">
-    </picture>
-
-    <article>
       <h1>The Bright Future of Web 3.0?</h1>
-      <p>We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. But is it really fulfilling its promise?</p>
-      <a href="#">Read more <span class="sr-only">about the bright future of Web 3.0</span></a>
-    </article>
-  </section>
+
+      <article>
+        <p>We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. But is it really fulfilling its promise?</p>
+        <a href="#">Read more <span class="sr-only">about the bright future of Web 3.0</span></a>
+      </article>
+    </section>
 
 <!--Right box-->
-
-  <aside>
-    <h2>New</h2>
-    <ul>
-      <li>
-        <article>
-          <h3>Hydrogen VS Electric Cars</h3>
-          <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
-        </article>
-      </li>
-
-      <li>
-        <article>
-          <h3>The Downsides of AI Artistry</h3>
-          <p>What are the possible adverse effects of on-demand AI image generation?</p>
-        </article>
-      </li>
-
-      <li>
-        <article>
-          <h3>Is VC Funding Drying Up?</h3>
-          <p>Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
-        </article>
-      </li>
-    </ul>
-  </aside>
+    <aside>
+      <h2>New</h2>
+      <ul>
+        <li>
+          <article>
+            <h3>Hydrogen VS Electric Cars</h3>
+            <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+          </article>
+        </li>
+        <li>
+          <article>
+            <h3>The Downsides of AI Artistry</h3>
+            <p>What are the possible adverse effects of on-demand AI image generation?</p>
+          </article>
+        </li>
+        <li>
+          <article>
+            <h3>Is VC Funding Drying Up?</h3>
+            <p>Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+          </article>
+        </li>
+      </ul>
+    </aside>
 
 <!--Pseudo news footer-->
-
-  <section class="foot" aria-labelledby="foot-heading">
-    <h2 id="foot-heading" class="sr-only">Latest Articles</h2>
-    <ul>
-      <li class="preview">
-        <article>
-          <a href="#" class="preview__link">
+    <section class="foot" aria-labelledby="foot-heading">
+      <h2 id="foot-heading" class="sr-only">Latest Articles</h2>
+      <ul>
+        <li class="preview">
+          <article>
             <img src="assets/images/image-retro-pcs.jpg" alt="Illustration of retro PCs" class="preview__img">
             <div class="preview__meta">
               <span class="preview__index">01</span>
-              <h3 class="preview__title">Reviving Retro PCs</h3>
+              <h3 class="preview__title"><a href="#">Reviving Retro PCs</a></h3>
               <p class="preview__excerpt">What happens when old PCs are given modern upgrades?</p>
             </div>
-          </a>
-        </article>
-      </li>
-
-      <li class="preview">
-        <article>
-          <a href="#" class="preview__link">
+          </article>
+        </li>
+        <li class="preview">
+          <article>
             <img src="assets/images/image-top-laptops.jpg" alt="Illustration of some laptops" class="preview__img">
             <div class="preview__meta">
               <span class="preview__index">02</span>
-              <h3 class="preview__title">Top 10 Laptops of 2022</h3>
+              <h3 class="preview__title"><a href="#">Top 10 Laptops of 2022</a></h3>
               <p class="preview__excerpt">Our best picks for various needs and budgets.</p>
             </div>
-          </a>
-        </article>
-      </li>
-
-      <li class="preview">
-        <article>
-          <a href="#" class="preview__link">
+          </article>
+        </li>
+        <li class="preview">
+          <article>
             <img src="assets/images/image-gaming-growth.jpg" alt="Illustration of a gaming joystick" class="preview__img">
             <div class="preview__meta">
               <span class="preview__index">03</span>
-              <h3 class="preview__title">The Growth of Gaming</h3>
+              <h3 class="preview__title"><a href="#">The Growth of Gaming</a></h3>
               <p class="preview__excerpt">How the pandemic has sparked fresh opportunities.</p>
             </div>
-          </a>
-        </article>
-      </li>
-    </ul>
-  </section>
+          </article>
+        </li>
+      </ul>
+    </section>
 
   </main>
 
-<!--Footer?-->
+<!--Footer-->
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+      Coded by <a href="https://github.com/aalLuxen">Angel Albedo L.</a>.
+    </div>
+  </footer>
 
-<footer>
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
-    Coded by <a href="https://github.com/aalLuxen">Angel Albedo L.</a>.
-  </div>
-</footer>
+  <div id="menu-overlay" class="overlay"></div>
 
-<div id="menu-overlay" class="overlay"></div>
-
-<script src="script.js"></script>
+  <script src="script.js"></script>
 
 </body>
 </html>
