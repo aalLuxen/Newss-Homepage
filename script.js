@@ -7,17 +7,13 @@ function setMenuOpen(isOpen) {
     if (isOpen) {
         mainNav.removeAttribute('hidden');
         mainNav.setAttribute('aria-hidden', 'false');
-        menuOpen.setAttribute('aria-expanded', 'true');
-        menuClose.setAttribute('aria-expanded', 'true');
         menuOverlay.style.display = 'block';
-        menuClose.focus(); // Move focus into the menu
+        menuClose.focus();
     } else {
         mainNav.setAttribute('hidden', '');
         mainNav.setAttribute('aria-hidden', 'true');
-        menuOpen.setAttribute('aria-expanded', 'false');
-        menuClose.setAttribute('aria-expanded', 'false');
         menuOverlay.style.display = 'none';
-        menuOpen.focus(); // Return focus to open button
+        menuOpen.focus();
     }
 }
 
