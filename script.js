@@ -11,7 +11,7 @@ function setMenuOpen(isOpen) {
         menuClose.setAttribute('aria-expanded', 'true');
         menuOverlay.style.display = 'block';
     } else {
-        mainNav.hidden = true;
+        mainNav.setAttribute('hidden', '');
         mainNav.setAttribute('aria-hidden', 'true');
         menuOpen.setAttribute('aria-expanded', 'false');
         menuClose.setAttribute('aria-expanded', 'false');
