@@ -29,7 +29,7 @@
       <img src="assets/images/icon-menu.svg" alt="open menu">
     </button>
 
-    <nav id="main-nav" hidden aria-hidden="true">
+    <nav id="main-nav" aria-label="Main navigation" hidden aria-hidden="true">
       <button id="menu-close" aria-controls="main-nav" aria-expanded="false">
         <img src="assets/images/icon-menu-close.svg" alt="close menu">
       </button>
@@ -70,7 +70,10 @@
 
     <article>
       <p>We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. But is it really fulfilling its promise?</p>
-      <a href="#">Read more</a>
+      <a href="#">
+        Read more
+        <span class="sr-only"> about the bright future of Web 3.0</span>
+      </a>
     </article>
   </section>
 
